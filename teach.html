@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Teach</title>
+	<link rel="stylesheet" type="text/css" href="style02.css">
+	<style type="text/css">
+
+	</style>
+</head>
+<body>
+	<nav>
+		<div class="logo"><img src="images/icon/logo.png" alt="logo"></div>
+		<ul>
+			<li><a class="active" href="">Home</a></li>
+			<li><a href="#portfolio_section">Portfolio</a></li>
+			<li><a href="#team_section">Team</a></li>
+			<li><a href="#services_section">Services</a></li>
+			<li><a href="#contactus_section">Contact</a></li>
+		</ul>
+		<!--<div class="srch"><input type="text" class="search" placeholder="Search here..."><img src="images/icon/search.png" alt="search" onclick=slide()></div>-->
+		<a class="get-started" href="index.html">Logout</a>
+		<img src="images/icon/menu.png" class="menu" onclick="sideMenu(0)" alt="menu">
+	</nav>
+	<div class="feedbox">
+		<div class="feed">
+			<form action="insert_course_details.php" enctype="multipart/form-data" method="post">
+				<label>Your Name</label><br>
+				<input type="text" name="tname" class="tname" required="required" placeholder="Enter your Name"><br>
+				<label>Email</label><br>
+				<input type="email" name="mail" required="required" placeholder="Enter your E-mail address"><br>
+				<label>Course Name</label><br>
+				<input type="text" name="cname" required="required" placeholder="Enter the Course Name"><br>
+				<label>Course Description</label><br>
+				<textarea name="cdesc" placeholder="Enter details or highlights of the course"></textarea><br>
+				<label>Course Link</label><br>
+				<input type="url" name="clink" required="required" placeholder="Enter the link to youtube playlist of the course"><br>
+				<label>Thumbnail Image</label><br>
+				<input type="file" name="timage" required="required" placeholder="attach an image to be displayed as a Thumbnail"><br>
+				<label>Your Resume</label><br>
+				<input type="file" name="resume" required="required" placeholder="upload your CV/ resume"><br>
+				<button type="submit" id="csubmit">Create Course</button>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
